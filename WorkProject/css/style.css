@@ -133,7 +133,7 @@ header {
   width: 250%;
 }
 
-.rew  {
+.rew {
   position: relative;
   display: flex;
   align-items: center;
@@ -330,9 +330,7 @@ ion-icon {
   max-width: 90%;
 }
 
-
 .up {
-
   right: 0; /* Изначально установите стрелку слева */
 }
 
@@ -341,15 +339,14 @@ ion-icon {
   background-color: #9cdac5;
   width: 860px;
   height: 200px;
-
 }
 
 .social-icons a {
   display: inline-block;
   margin-left: 15px;
-} 
+}
 .social-icons a ion-icon {
-  color: black ; /* Можно изменить цвет иконок на любой другой */
+  color: black; /* Можно изменить цвет иконок на любой другой */
 }
 
 .up {
@@ -383,3 +380,9 @@ ion-icon {
 h5 {
   font-weight: 800;
 }
+
+.inn {
+  width: 600px;
+  height: 800px;
+}
+

@@ -16,35 +16,51 @@
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
 
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
 </head>
 
 <body>
     <header id="header">
         <div class="header-inner">
-          <div class="logo">
-            <img src="photo\logo.png" alt="Logo" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"/>
-          </div>
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Переключатель навигации">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Главная</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="hosting.html">Размещение</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="bathhouse.html">Баня</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="additionalServices.html">Доп.
-                      услуги</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">О нас</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="contacts.html">Контакты</a></li>
-                </ul>
-          </nav>
+            <div class="logo">
+                <img src="photo\logo.png" alt="Logo"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" />
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page"
+                                    href="hosting.html">Размещение</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="bathhouse.html">Баня</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page"
+                                    href="additionalServices.html">Доп.
+                                    услуги</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">О нас</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page"
+                                    href="contacts.html">Контакты</a></li>
+                        </ul>
+            </nav>
         </div>
         </div>
         </div>
-      </header>
+    </header>
 
     <div class="container">
         <div class="row">
@@ -58,7 +74,8 @@
                         Яндекс Карты</a><iframe
                         src="https://yandex.ru/map-widget/v1/?ll=62.643915%2C61.346261&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgkxNzI5MDUwMjkShwHQoNC-0YHRgdC40Y8sINCl0LDQvdGC0Yst0JzQsNC90YHQuNC50YHQutC40Lkg0LDQstGC0L7QvdC-0LzQvdGL0Lkg0L7QutGA0YPQsywg0KHQvtCy0LXRgtGB0LrQuNC5INGA0LDQudC-0L0sINC-0LfQtdGA0L4g0KHQstC10YLQu9C-0LUiCg1wmHpCFZhRdUI%2C&z=13.73"
                         width="860" height="500" frameborder="1" allowfullscreen="true"
-                        style="position:relative;"></iframe></div>
+                        style="position:relative;"></iframe>
+                </div>
                 <hr>
                 <h2 style="font-weight: 800; margin: 30px;">Связь с нами</h2>
                 <div class="d-flex justify-content-center align-items-center">
@@ -75,10 +92,61 @@
                         </div>
                     </div>
                 </div>
-               <!-- <hr>
-                 <h2 style="font-weight: 800;  margin: 30px;">Сертификаты</h2>
-                <img src="photo\quino-al-mBQIfKlvowM-unsplash.jpg" alt="Сертификат"
-                    style="width: 800px; height: 500px; margin: 20px;"> -->
+                <hr>
+                <h2 style="font-weight: 800;  margin: 30px;">Сертификаты</h2>
+                <div class="col-md-7 mx-auto">
+                    <div class="fotorama" data-nav="thumbs">
+                        <a href="photo/documents/выписка 1 стр-1.png">
+                            <img src="photo/documents/выписка 1 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/выписка 2 стр-1.png">
+                            <img src="photo/documents/выписка 2 стр-1.png" width="144" height="96">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-7 mx-auto">
+                    <div class="fotorama" data-nav="thumbs">
+                        <a href="photo/documents/устав 1 стр-1.png">
+                            <img src="photo/documents/устав 1 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 2 стр-1.png">
+                            <img src="photo/documents/устав 2 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 3 стр-1.png">
+                            <img src="photo/documents/устав 3 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 4 стр-1.png">
+                            <img src="photo/documents/устав 4 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 5 стр-1.png">
+                            <img src="photo/documents/устав 5 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 6 стр-1.png">
+                            <img src="photo/documents/устав 6 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 7 стр-1.png">
+                            <img src="photo/documents/устав 7 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 8 стр-1.png">
+                            <img src="photo/documents/устав 8 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 9 стр-1.png">
+                            <img src="photo/documents/устав 9 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 10 стр-1.png">
+                            <img src="photo/documents/устав 10 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 11 стр-1.png">
+                            <img src="photo/documents/устав 11 стр-1.png" width="144" height="96">
+                        </a>
+                        <a href="photo/documents/устав 12 стр-1.png">
+                            <img src="photo/documents/устав 12 стр-1.png" width="144" height="96">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <img src="photo/documents/Яриков ИНН-1.png" alt="ИНН" class="inn">
             </div>
         </div>
     </div>
@@ -100,19 +168,21 @@
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <img src="photo\logo.png" alt="logo" style="width: 200px; height: 70px;">
-            </a>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-vk"></ion-icon></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="paper-plane-outline"></ion-icon></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-          </ul>
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <img src="photo\logo.png" alt="logo" style="width: 200px; height: 70px;">
+                </a>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-vk"></ion-icon></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon
+                            name="paper-plane-outline"></ion-icon></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
+            </ul>
         </footer>
-      </div>
+    </div>
 
 
 
