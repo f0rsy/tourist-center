@@ -28,32 +28,27 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Главная</a>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="/">Главная</a>
               </li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="hosting.html">Размещение</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="bathhouse.html">Баня</a>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="/hosting">Размещение</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="/bathhouse">Баня</a>
               </li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="additionalServices.html">Доп.
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="/additionalServices">Доп.
                   услуги</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="about.html">О нас</a>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="/about">О нас</a>
               </li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="contacts.html">Контакты</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="/contacts">Контакты</a></li>
             </ul>
           </div>
       </nav>
     </div>
   </header>
 
-  <div class="slider-wrapper">
-    <div class="slider">
-      <img id="slide-1" src="photo/slider1.jpg" alt="" />
-      <img id="slide-2" src="photo/slider2.jpg" alt="" />
-      <img id="slide-3" src="photo/slider3.jpg" alt="" />
-    </div>
-    <div class="slider-nav">
-      <a href="#slide-1"></a>
-      <a href="#slide-2"></a>
-      <a href="#slide-3"></a>
+  <div id="slider" class="slider">
+    <div class="slides">
+      <div class="slide"><img src="photo/slider1.jpg" alt=""></div>
+      <div class="slide"><img src="photo/slider2.jpg" alt=""></div>
+      <div class="slide"><img src="photo/slider3.jpg" alt=""></div>
     </div>
   </div>
 
@@ -187,23 +182,24 @@
     </a>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-              <div class="logo">
-                  <img src="photo\logo.png" alt="Logo"
-                      class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" />
-              </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <div class="logo">
+            <img src="photo\logo.png" alt="Logo"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" />
           </div>
+        </div>
 
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-vk"></ion-icon></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon
-                          name="paper-plane-outline"></ion-icon></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
-              </li>
-          </ul>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-vk"></ion-icon></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="paper-plane-outline"></ion-icon></a>
+          </li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          </li>
+        </ul>
       </footer>
-  </div>
+    </div>
 
+    <script src="sliderMainPage.js"></script>
     <script src="rewiev.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
