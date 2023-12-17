@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('slider');
-    const slides = slider.querySelector('.slides');
+    const slides = slider.querySelector('.slideries');
     let slideIndex = 0;
     let interval;
 
