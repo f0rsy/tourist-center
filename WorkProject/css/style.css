@@ -390,7 +390,7 @@ h5 {
 }
 
 .slide {
-  width: calc(100% / 3); 
+  width: 100%; 
   height: auto; 
   flex: 0 0 auto; 
 }

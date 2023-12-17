@@ -16,7 +16,7 @@ function initializeSlider(sliderElement) {
     }
   
     // Установить интервал для автоматического переключения слайдов
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 4000);
   
     // Показать первый слайд
     showSlide(currentSlide);
