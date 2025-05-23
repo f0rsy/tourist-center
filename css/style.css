@@ -25,6 +25,17 @@ body {
   background-size: cover; 
   background-position: center; 
   background-attachment: scroll;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  height: 100%;
+}
+
+main {
+   flex: 1;
 }
 
 @media (max-width: 1600px) {
@@ -334,6 +345,7 @@ ion-icon {
 }
 .midTxt {
   font-size: 28.5px;
+  font-family: 'Montserrat Alternates Bold';
 }
 
 .card.shadow-sm {
@@ -588,6 +600,8 @@ ion-icon {
   color: #488873;
   background-color: #f2fffb;
   transition: 300ms;
+  text-decoration: none;
+  padding: 5px 0;
 }
 
 .additional:hover {
@@ -874,4 +888,126 @@ footer {
   font-size: 32px;
   color: white;
   cursor: pointer;
+}
+
+.place a {
+  color: #fff;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.bigName {
+  width: auto;
+  height: 40vh;
+}
+
+/* #footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
+@media (max-width: 992px  ) {
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .slider-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.8s ease;
+  }
+
+  .slider-bg.next {
+    z-index: 1;
+    transform: translateX(100%);
+  }
+
+  .slider-bg.active {
+    z-index: 2;
+  }
+
+  .title-layer {
+    position: absolute;
+    top: 49%;
+    left: 100px;
+    right: 100px;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 0px;
+  }
+
+  .slide-title {
+    position: absolute;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Montserrat Alternates Bold';
+    color: white;
+    white-space: nowrap;
+    top: 0;
+  }
+
+  .title-next {
+    right: -22%;
+    transform: translateX(0);
+    opacity: 0.3;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .description-layer {
+    position: absolute;
+    bottom: 260px;
+    left: 100px;
+    z-index: 2;
+    color: white;
+    font-size: 15px;
+    max-width: 600px;
+    transition: opacity 0.6s ease;
+  }
+
+  .nav-buttons {
+    position: absolute;
+    top: 52%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+  }
+
+  .nav-buttons button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .bigName {
+    width: 360px;
+    height: auto;
+  }
+
+  .midlTxt, .midTxt {
+    font-size: 20px;
+  }
 }

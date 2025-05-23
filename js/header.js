@@ -7,33 +7,28 @@ function loadComponent(url, containerId) {
       return response.text();
     })
     .then(data => {
-      document.getElementById(containerId).innerHTML = data;
+      const container = document.getElementById(containerId);
+      if (container) {
+        container.innerHTML = data;
+
+        // Если загружаем header — добавляем обработчики событий
+        if (containerId === 'header-container') {
+          const selects = container.querySelectorAll('select');
+          selects.forEach(select => {
+            select.addEventListener('change', function () {
+              if (this.value) {
+                window.location.href = this.value;
+              }
+            });
+          });
+        }
+      }
     })
     .catch(err => {
-      console.error(err);
+      console.error(`Не удалось загрузить компонент: ${url}`, err);
     });
 }
 
+// Загружаем header и footer
 loadComponent('components/header.html', 'header-container');
-
 loadComponent('components/footer.html', 'footer-container');
-
-fetch('components/header.html')
-  .then(response => response.text())
-  .then(data => {
-    const headerContainer = document.getElementById('header-container');
-    headerContainer.innerHTML = data;
-
-    const selects = headerContainer.querySelectorAll('select');
-    selects.forEach(select => {
-      select.addEventListener('change', function () {
-        if (this.value) {
-          window.location.href = this.value;
-        }
-      });
-    });
-
-  })
-  .catch(err => {
-    console.error('Ошибка при загрузке header.html:', err);
-  });
