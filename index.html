@@ -14,32 +14,35 @@
 <body style="display: block;">
   <div id="header-container"></div>
   <div class="slider">
-    <!-- Фон -->
-    <div class="bg-wrapper">
-      <img class="slider-bg active" src="photo/slider1.png" alt="Background">
-      <img class="slider-bg next" src="photo/slider2.png" alt="Next Background">
+    <div class="slider-bg-container">
+      <img class="slider-bg" src="photo/slider1.png" alt="Background">
     </div>
-  
-    <!-- Заголовки -->
-    <div class="title-layer">
-      <div class="slide-title title-current">СВЕТЛОЕ</div>
-      <div class="slide-title title-next">ТРЕХРЕЧЬЕ</div>
-    </div>
-  
-    <!-- Описание -->
-    <div class="description-layer">
-      <p class="slide-description">
-        Это место силы, где природа и архитектура сплетаются в магический узор.
-      </p>
-    </div>
-  
-    <!-- Кнопки -->
-    <div class="nav-buttons">
-      <button id="prev">←</button>
-      <button id="next">→</button>
+    <div class="slider-content">
+      <div class="title-wrapper">
+        <div class="arrow-group">
+          <button id="prev" class="arrow-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <button id="next" class="arrow-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <polyline points="9 6 15 12 9 18" />
+            </svg>
+          </button>
+        </div>
+        <div class="title-block">
+          <h1 class="slider-title-current">СВЕТЛОЕ</h1>
+          <p class="slider-description">
+            Это место силы, где природа и архитектура сплетаются в магический узор.
+          </p>
+        </div>
+        
+      </div>
+      <h1 class="slider-title-next">ТРЕХРЕЧЬЕ</h1>
     </div>
   </div>
-  
+
 
   <main class="container">
 
@@ -152,4 +155,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
