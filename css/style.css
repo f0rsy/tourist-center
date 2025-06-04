@@ -899,7 +899,7 @@ footer {
 
 .slider-title-next {
   position: absolute;
-    top: 23vw;
+    top: 39%;
     right: -20vw;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.3);
@@ -934,7 +934,7 @@ footer {
   }
 
   .slider-title-next {
-    top: 103vw;
+    top: 47%;
   }
 }
 
