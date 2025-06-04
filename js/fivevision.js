@@ -20,11 +20,10 @@ if (window.finevision === undefined) {
         this.example_banner =  {
             style: {
                 "z-index": "9999",
-                background: "#fff",
+                background: "none",
                 position: "fixed",
-                right: "0",
-                bottom: "0",
-                border: "2px solid #000"
+                left: "0",
+                top: "0",
             },
             id: "finevision_banner",
             itemprop: "Copy",
@@ -32,9 +31,9 @@ if (window.finevision === undefined) {
                 href: "?finevision=true"
             },
             img: {
-                src: "https://finevision.ru/static/banner2.jpg",
-                width: "128px",
-                height: "64px"
+                src: "../photo/eye.svg",
+                width: "55px",
+                height: "50px"
             }
         };
 
@@ -128,7 +127,7 @@ if (window.finevision === undefined) {
         };
 
         this.create_example_banner = function () {
-            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:#fff;position:fixed;right:0;bottom:0;border:2px solid #000;\"><img width=128 height=64 src=\"" + this.example_banner.img.src + "\"></img></div>"
+            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:none;position:fixed;left:0;top:0;\"><img width=55 height=50 src=\"" + this.example_banner.img.src + "\"></img></div>"
             return $('#finevision_container').append(banner)
         };
 
@@ -170,7 +169,7 @@ if (window.finevision === undefined) {
 
         this.load_banner = function () {
             this.add_container();
-            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:#fff;position:fixed;right:0;bottom:0;border:2px solid #000;\"><img width=128 height=64 src=\"" + this.example_banner.img.src + "\"></img></div>"
+            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:none;position:fixed;left:0;top:0;\"><img width=55 height=50 src=\"" + this.example_banner.img.src + "\"></img></div>"
             document.getElementById('finevision_container').innerHTML=banner;
         };
 
