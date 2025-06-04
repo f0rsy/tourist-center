@@ -21,7 +21,7 @@ if (window.finevision === undefined) {
             style: {
                 "z-index": "9999",
                 background: "#fff",
-                position: "absolute",
+                position: "fixed",
                 right: "0",
                 bottom: "0",
                 border: "2px solid #000"
@@ -128,7 +128,7 @@ if (window.finevision === undefined) {
         };
 
         this.create_example_banner = function () {
-            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:#fff;position:absolute;right:0;bottom:0;border:2px solid #000;\"><img width=128 height=64 src=\"" + this.example_banner.img.src + "\"></img></div>"
+            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:#fff;position:fixed;right:0;bottom:0;border:2px solid #000;\"><img width=128 height=64 src=\"" + this.example_banner.img.src + "\"></img></div>"
             return $('#finevision_container').append(banner)
         };
 
@@ -170,7 +170,7 @@ if (window.finevision === undefined) {
 
         this.load_banner = function () {
             this.add_container();
-            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:#fff;position:absolute;right:0;bottom:0;border:2px solid #000;\"><img width=128 height=64 src=\"" + this.example_banner.img.src + "\"></img></div>"
+            banner = "<div onclick=\"finevision.activate_navbar()\" id=\"" + this.example_banner.id + "\"style=\"z-index:9999;background:#fff;position:fixed;right:0;bottom:0;border:2px solid #000;\"><img width=128 height=64 src=\"" + this.example_banner.img.src + "\"></img></div>"
             document.getElementById('finevision_container').innerHTML=banner;
         };
 
