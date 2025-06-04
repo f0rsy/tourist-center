@@ -96,6 +96,7 @@ header {
 
 .navbar-nav {
   display: flex;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -956,6 +957,11 @@ footer {
 .bigName {
   width: auto;
   height: 40vh;
+}
+
+#finevision_containe {
+  position: absolute;
+  left: 0;
 }
 
 /* #footer-container {
